@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Serif';
+    box-sizing: border-box;
+}
+.firstcol{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.firstcol h1{
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+.firstcol p{
+    margin-bottom: 20px;
+}
+.firstcol img{
+    width:150px;
+    height: auto;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+.firstcol  p{
+    width: 600px;
+}
+.firstcol h2{
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+.firstcol video{
+    width:200px;
+    height: auto;
+    margin: 5px;
+}
+.imgid{
+    display: flex;
+
+}
+.vid{
+    display: flex;
+
+}
+.secondcol{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    align-items: center;
+}
+.secondcol h2{
+    margin-left: 230px;
+    margin-top: 20px;
+margin-bottom: 10px;
+}
+.secondcol img{
+    width:200px;
+    height: auto;
+    margin: 5px;
+}
+.chris{
+    width:50px;
+    height:auto;
+}
+.imgsec{
+    display: flex;
+}
+.ot{
+display: flex;
+margin:40px
+}
+.audi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.secrow1{
+    display: flex;
+    flex-direction: column;
+
+}
+.secrow1 h1{
+    margin-left: 220px;
+    margin-bottom: 10px;
+}
+.secrow{
+    display: flex;
+    margin: 20px;
+}
+.secrow img{
+    width:250px;
+    height: auto;
+    margin-right: 20px;
+}
+.secrow p{
+    margin-left: 10px;
+    margin-right: 20px;
+}

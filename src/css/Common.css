@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Serif';
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto Serif';
+    src: url('..\fonts\Roboto,Roboto_Serif\Roboto_Serif\static\RobotoSerif_28pt_Condensed-Black.ttf') format('truetype');
+}
+html, body {
+    height: 100%; /* Ensure both html and body fill the entire height of the viewport */
+}
+
+/* Body Flex container */
+
+
+nav {
+    background-color: #00A6FB;
+    height: 130px;
+    padding-left: 30px;
+    position: fixed; /* Fixes the navigation at the top */
+    top: 0; /* Position it at the top */
+    left: 0; /* Align to the left edge */
+    width: 100%; /* Span the full width of the viewport */
+    z-index: 1000; /* Ensure it's on top of other content */
+   
+    
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    height: 100%;
+}
+
+.nav a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight:bolder;
+}
+.menu-toggle {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .menu-toggle span {
+    background:black ;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    transition: all 0.3s;
+  }
+
+  
+ 
+.menu-toggle{
+    margin: 0;
+    padding: 0 ;
+
+
+}
+.menu-toggle {
+   
+    position: absolute;
+    top:70% ;
+    left:80%;
+    
+}
+.menu-toggle span:hover {
+    background: #051923;
+    width: auto; /* Add hover effect */
+  }
+main {
+    padding-top: 150px; /* Space for the fixed nav at the top */
+    padding-bottom: 80px; /* Space for the fixed footer at the bottom */
+}
+
+.footer {
+    background-color: #00A6FB;
+    height: 70px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+    margin-top: auto;
+    position: fixed; /* Fixes the footer at the bottom */
+    bottom: 0; /* Position it at the bottom */
+    left: 0; /* Align to the left edge */
+    width: 100%; /* Span the full width of the viewport */
+    z-index: 1000; /* Ensure it's above other content */
+   
+   
+}
+
+
+.footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px; 
+    margin-left: 10px;
+    border-radius: 50%; 
+    background-color: #00A6FB;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black; 
+    width: 40px; 
+    height: 40px; 
+}
+
+  /* Responsive Design */
+  @media (max-width: 1336px)  {
+    .menu-toggle {
+      display: flex; /* Show the burger menu */
+    }
+  
+    .nav{
+      display: none; /* Hide the nav links by default */
+      flex-direction: column;
+      position: absolute;
+      height: auto;
+      top: 50px;
+      right: 20px;
+      background-color:  #E6F7FF;
+      width: 200px;
+      border-radius: 5px;
+    }
+  
+    .nav.active {
+      display: flex; /* Show the nav links when active */
+    }
+  
+    .nav li {
+      margin: 10px 0;
+    }
+}
+
